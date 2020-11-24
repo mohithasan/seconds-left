@@ -1,20 +1,17 @@
 import time
 
+i = int(input("Input Your Number Here "))
+num = 1
 
-def timer(x, y, z):
-    x = x * 60
-    y = y + x
-    y = y * 60
-    z = z + y
+time.sleep(1)
+print("Calculating in 5 Seconds!")
+print("Started!")
+time.sleep(5)
 
-    for i in range(1, z+1):
-        print(z, "seconds left")
-        z = z - 1
-        time.sleep(1)
+while num < i:
+    print(num)
+    num = num + 1
+    time.sleep(1)
 
-
-jk = int(input("Hours"))
-yu = int(input("Minutes"))
-zm = int(input("Seconds"))
-
-timer(jk, yu, zm)
+print(i)
+print("Done!")
